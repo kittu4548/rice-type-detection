@@ -1,0 +1,237 @@
+html { 
+  scroll-behavior: smooth; 
+} 
+ 
+/* Body setup */ 
+body { 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Segoe UI', sans-serif; 
+  position: relative; 
+  height: 100vh; 
+  overflow-x: hidden; 
+  background-image: url("https://img-cdn.thepublive.com/fit-in/1200x675/bnn/media/post_attachments/content/uploads/2023/09/myanmar-farmers-concerned-over-new-rice-price-controls-20230925162151.jpg");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-color: #f9f9f9; 
+} 
+ 
+/* Blur background using ::before */ 
+body::before { 
+  content: ""; 
+  background: url('main_page2.jpg') no-repeat center center fixed; 
+  background-size: cover; 
+  position: absolute; 
+  top: 0; left: 0; right: 0; bottom: 0; 
+  z-index: -1; 
+  filter: blur(3px); 
+  transform: scale(1.05); /* prevent blur cutoff edges */ 
+} 
+ 
+/* Navbar */ 
+.navbar { 
+  background-color: rgba(0, 122, 204, 0.95); 
+  padding: 15px 0; 
+  text-align: center; 
+  position: fixed; 
+  width: 100%; 
+  top: 0; 
+  z-index: 2; 
+} 
+ 
+.navbar a { 
+  color: white; 
+  margin: 0 15px; 
+  text-decoration: none; 
+  font-weight: bold; 
+} 
+ 
+.navbar a:hover { 
+  text-decoration: underline; 
+} 
+ 
+/* Hero content */ 
+.hero { 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  color: white; 
+  text-shadow: 1px 1px 4px #000; 
+  z-index: 1; 
+  position: relative; 
+} 
+ 
+.hero button { 
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  background-color: #00c85f; 
+  color: white; 
+  border: none; 
+  font-size: 16px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+} 
+ 
+.hero button:hover { 
+  background-color: #009b4a; 
+} 
+ 
+/* Centered container for forms */ 
+.container { 
+  margin-top: 120px; /* keeps it below navbar */ 
+  max-width: 700px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center; 
+  padding: 60px; 
+  border-radius: 16px; 
+  background-color: rgba(255, 255, 255, 0.15); 
+  color: white; 
+  text-shadow: 1px 1px 4px #000; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+  font-size: 18px; 
+} 
+ 
+ 
+ 
+/* Buttons */ 
+button { 
+  padding: 10px 20px; 
+  border: none; 
+  background-color: #007acc; 
+  color: white; 
+  font-size: 16px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  margin-top: 20px; 
+} 
+ 
+button:hover { 
+  background-color: #005fa3; 
+} 
+ 
+/* Contact Section */ 
+.contact-section { 
+  padding: 80px 20px; 
+  text-align: center; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  backdrop-filter: blur(4px); 
+  color: #333; 
+  margin-top: 100vh; 
+} 
+ 
+.contact-section h2 { 
+  font-size: 32px; 
+  color: #00c85f; 
+  margin-bottom: 40px; 
+} 
+ 
+.contact-cards { 
+  display: flex; 
+  justify-content: center; 
+  gap: 30px; 
+  flex-wrap: wrap; 
+  margin-bottom: 40px; 
+} 
+ 
+.card { 
+  background-color: white; 
+  padding: 25px; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+  width: 250px; 
+  text-align: center; 
+} 
+ 
+.card h3 { 
+  color: #333; 
+  margin-bottom: 10px; 
+} 
+ 
+.card p { 
+  color: #666; 
+  font-size: 14px; 
+} 
+ 
+/* Contact Form */ 
+.contact-form { 
+  max-width: 700px; 
+  margin: auto; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+} 
+ 
+.contact-form input, 
+.contact-form textarea { 
+  padding: 12px; 
+  font-size: 16px; 
+  border-radius: 8px; 
+  border: 1px solid #ccc; 
+  width: 100%; 
+} 
+ 
+.contact-form textarea { 
+  resize: vertical; 
+} 
+ 
+.contact-form button { 
+  background-color: #00c85f; 
+  color: white; 
+  border: none; 
+  padding: 12px; 
+  font-size: 16px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+} 
+ 
+.contact-form button:hover { 
+  background-color: #009b4a; 
+} 
+ 
+.about-section { 
+  padding: 40px; 
+  background-color: #f9f9f9; 
+} 
+ .about-section .image { 
+  padding-top: 200px;
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px;}
+.about-content { 
+  display: flex; 
+  gap: 30px; 
+  align-items: flex-start; 
+} 
+ 
+.about-image {
+  padding-top: 150px; 
+  width: 400px; 
+  height: auto; 
+  border-radius: 10px; 
+} 
+ 
+.about-text { 
+  flex: 1; 
+} 
+ 
+.features { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+  margin-top: 20px; 
+} 
+ 
+.feature-card { 
+background: #ffffff; 
+border: 1px solid #ddd; 
+border-radius: 12px; 
+padding: 15px; 
+box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+} 

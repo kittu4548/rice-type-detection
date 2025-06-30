@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rice Type Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="navbar">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('pred') }}">Predict</a>
+    <a href="{{ url_for('pred') }}#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="hero">
+    <h1>Welcome to Rice Type Detection</h1>
+    <p>This model can detect rice type based on rice images.</p>
+    <a href="{{ url_for('pred') }}"><button>Predict</button></a>
+  </div>
+
+  <section class="contact-section" id="contact">
+    <h2>CONTACT US</h2>
+    <div class="contact-cards">
+      <div class="card">
+        <h3>📍 Our Address</h3>
+        <p>A108 Adam Street,<br>Pune, India</p>
+      </div>
+      <div class="card">
+        <h3>📧 Email Us</h3>
+        <p>info@example.com<br>contact@example.com</p>
+      </div>
+      <div class="card">
+        <h3>📞 Call Us</h3>
+        <p>+91 58892 55488<br>+91 66872 25444</p>
+      </div>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
